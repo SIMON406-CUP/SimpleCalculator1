@@ -17,20 +17,23 @@ num2 = float(input("Enter second number: "))
 
 # perform the selected operation
 if choice == '1':
-    print(num1, "+", num2, "=", num1 + num2)
+    results = num1+num2
+    print("the result is:" ,result)
 
 elif choice == '2':
-    print(num1, "-", num2, "=", num1 - num2)
+    result = num1 - num2
+    print("The result is:", result)
 
 elif choice == '3':
-    print(num1, "*", num2, "=", num1 * num2)
+    result = num1 * num2
+    print("The result is:", result)
 
 elif choice == '4':
     if num2 != 0:
-        print(num1, "/", num2, "=", num1 / num2)
+        result = num1 / num2
+        print("The result is:", result)
     else:
-        print("Error! Division by zero.")
+        print("Error! Cannot divide by zero.")
 
 else:
-    print("Invalid input")
-
+    print("Invalid choice!")
