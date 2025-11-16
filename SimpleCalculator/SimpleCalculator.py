@@ -19,25 +19,28 @@ if choice == '5':
 numbers = input("Enter numbers separated by space: ").split()
 numbers = [float(num) for num in numbers]
 
-# perform the selected operation
-if choice == '1': #Add
-    results = num1+num2
-    print("the result is:" ,result)
-
-elif choice == '2':
-    result = num1 - num2
+# Perform operations
+if choice == '1':   # Add
+    result = sum(numbers)
     print("The result is:", result)
 
-elif choice == '3':
-    result = num1 * num2
+elif choice == '2': # Subtract
+    result = numbers[0]
+    for num in numbers[1:]:
+        result -= num
     print("The result is:", result)
 
-elif choice == '4':
-    if num2 != 0:
-        result = num1 / num2
-        print("The result is:", result)
-    else:
-        print("Error! Cannot divide by zero.")
+elif choice == '3': # Multiply
+    result = 1
+    for num in numbers:
+        result *= num
+    print("The result is:", result)
+
+elif choice == '3': # Multiply
+    result = 1
+    for num in numbers:
+        result *= num
+    print("The result is:", result)
 
 else:
     print("Invalid choice!")
