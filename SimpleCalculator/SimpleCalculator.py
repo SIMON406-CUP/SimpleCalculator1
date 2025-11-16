@@ -9,14 +9,18 @@ print("4. Divide")
 print("5: exit")
 
 # get input from the user
-choice = input("Enter choice (1/2/3/4): ")
+choice = input("Enter choice (1/2/3/4/5): ")
 
-# get numbers from the user
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
+if choice == '5':
+    print ("Exiting---")
+    exit()
+
+    #Get unlimited numbers
+numbers = input("Enter numbers separated by space: ").split()
+numbers = [float(num) for num in numbers]
 
 # perform the selected operation
-if choice == '1':
+if choice == '1': #Add
     results = num1+num2
     print("the result is:" ,result)
 
